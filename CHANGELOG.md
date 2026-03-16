@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+- Support for Keycloak 26.5.5 (Fix #1303)
 
 ### Fixed
 - Fix Helm chart not being published to GitHub Pages on releases by publishing from tag pushes instead of main branch [#1356](https://github.com/adorsys/keycloak-config-cli/issues/1356)
