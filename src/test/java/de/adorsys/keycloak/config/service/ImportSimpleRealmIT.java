@@ -27,6 +27,7 @@ import de.adorsys.keycloak.config.exception.KeycloakRepositoryException;
 import de.adorsys.keycloak.config.util.VersionUtil;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.condition.DisabledIfSystemProperty;
 import org.keycloak.representations.idm.RealmRepresentation;
 
 import java.io.IOException;
@@ -301,16 +302,6 @@ class ImportSimpleRealmIT extends AbstractImportIT {
         RealmRepresentation realmAfter = keycloakProvider.getInstance().realm("simple").toRepresentation();
         // event expiration should be updated to 90 days
         assertThat(realmAfter.getEventsExpiration(), is(7776000L));
-    }
-
-    @Test
-    @Order(12)
-    void shouldImportRealmWithPasskeyParameters() throws Exception {
-        doImport("12_update_simple-realm_with_passkeys-settings.json");
-        RealmRepresentation updatedRealm = keycloakProvider.getInstance().realm(REALM_NAME).toRepresentation();
-
-        assertThat(updatedRealm.getWebAuthnPolicyPasswordlessPasskeysEnabled(), is(true));
-        assertThat(updatedRealm.getWebAuthnPolicyPasswordlessRpEntityName(), is("Keycloak"));
     }
 
     @Test

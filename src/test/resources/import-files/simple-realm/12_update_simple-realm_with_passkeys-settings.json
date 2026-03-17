@@ -1,6 +1,6 @@
 {
   "enabled": true,
-  "realm": "simple",
+  "realm": "simple-passkey",
   "webAuthnPolicyPasswordlessRpEntityName": "Keycloak",
   "webAuthnPolicyPasswordlessPasskeysEnabled": true
 }

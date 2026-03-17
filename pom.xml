@@ -782,6 +782,7 @@
                                 <exclude>**/OrganizationRepositoryTest.java</exclude>
                                 <exclude>**/ImportOrganizationsIT.java</exclude>
                                 <exclude>**/OrganizationVersionConditionTest.java</exclude>
+                                <exclude>**/ImportRealmWithPasskeysIT.java</exclude>
                             </testExcludes>
                         </configuration>
                     </plugin>
@@ -920,6 +921,7 @@ import org.keycloak.representations.userprofile.config.UPConfig;</token>
                                 <exclude>**/OrganizationRepositoryTest.java</exclude>
                                 <exclude>**/ImportOrganizationsIT.java</exclude>
                                 <exclude>**/OrganizationVersionConditionTest.java</exclude>
+                                <exclude>**/ImportRealmWithPasskeysIT.java</exclude>
                             </testExcludes>
                         </configuration>
                     </plugin>
@@ -1051,6 +1053,7 @@ import org.keycloak.representations.userprofile.config.UPConfig;</token>
                                 <exclude>**/OrganizationRepositoryTest.java</exclude>
                                 <exclude>**/ImportOrganizationsIT.java</exclude>
                                 <exclude>**/OrganizationVersionConditionTest.java</exclude>
+                                <exclude>**/ImportRealmWithPasskeysIT.java</exclude>
                             </testExcludes>
                         </configuration>
                     </plugin>
@@ -1103,6 +1106,7 @@ import org.keycloak.representations.userprofile.config.UPConfig;</token>
                                 <exclude>**/OrganizationRepositoryTest.java</exclude>
                                 <exclude>**/ImportOrganizationsIT.java</exclude>
                                 <exclude>**/OrganizationVersionConditionTest.java</exclude>
+                                <exclude>**/ImportRealmWithPasskeysIT.java</exclude>
                             </testExcludes>
                         </configuration>
                     </plugin>
